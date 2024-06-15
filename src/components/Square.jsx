@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-export const Square = () => {
-  const [value, setValue] = useState(null);
+export const Square = ({onSquareClick, value}) => {
+  
   return (
     <>
-      <button className='square' onClick={() => {setValue('X')}}>{value}</button>
+      <button className='square' onClick={onSquareClick}>{value}</button>
     </>
 
   )
